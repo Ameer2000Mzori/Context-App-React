@@ -21,7 +21,7 @@ const About = () => {
         <button onClick={showCard}>show popUp card</button>
       </div>
 
-      {showCardEl && <Card name={name} age={age} gender={gender} />}
+      {showCardEl && <Card place={'in about'} who={'Ameer'} gender={'male'} />}
     </>
   )
 }

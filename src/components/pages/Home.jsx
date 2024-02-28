@@ -21,7 +21,9 @@ const Home = () => {
         <button onClick={showCard}>show popUp card</button>
       </div>
 
-      {showCardEl && <Card />}
+      {showCardEl && (
+        <Card place={'in home'} who={'we dont know'} gender={'female'} />
+      )}
     </>
   )
 }
