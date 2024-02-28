@@ -18,7 +18,7 @@
 
 # 📖 About This Project <a name="about-project"></a>
 
-> Navbar-React is a project created with ReactJS and styled with TailwindCSS, utilizing React Router for the navbar. It includes animations and more to enhance the user experience. Prettier is used to maintain cleaner code. For a better understanding, check out the sample images or download the project.
+> Context-App-React is created using ReactJS and styled with TailwindCSS. I'm dedicated to learning how to use Context both globally and in a standard manner. Feel free to download the project or check out the sample images for a better understanding.
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
@@ -49,6 +49,7 @@
 - **[TAILWIND ]**
 - **[JAVASCRIPT ]**
 - **[REACT ]**
+- **[Context API ]**
 - **[PRETTIER ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
