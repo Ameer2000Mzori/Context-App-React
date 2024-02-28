@@ -4,7 +4,6 @@ import { Informations } from '../../App.js'
 const Home = () => {
   const [showCardEl, setShowCardEl] = useState(false)
   const { name, age, gender, Card } = useContext(Informations)
-  console.log(name, age, gender, Card)
 
   const showCard = () => {
     setShowCardEl(true)

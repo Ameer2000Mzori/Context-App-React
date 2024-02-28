@@ -6,7 +6,6 @@ import Home from './components/pages/Home.jsx'
 import About from './components/pages/About.jsx'
 import Contact from './components/pages/Contact.jsx'
 import NotFound from './components/pages/NotFound.jsx'
-import { getByDisplayValue } from '@testing-library/react'
 
 export const Informations = createContext()
 

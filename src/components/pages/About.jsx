@@ -4,13 +4,12 @@ import { Informations } from '../../App.js'
 const About = () => {
   const [showCardEl, setShowCardEl] = useState(false)
   const { name, age, gender, Card } = useContext(Informations)
-  console.log(name, age, gender, Card)
 
   const showCard = () => {
-    setShowCardEl(true) // Show the card
+    setShowCardEl(true)
 
     setTimeout(() => {
-      setShowCardEl(false) // Hide the card after 1 second
+      setShowCardEl(false)
     }, 1000)
   }
 
