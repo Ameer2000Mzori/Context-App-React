@@ -10,11 +10,14 @@ import { getByDisplayValue } from '@testing-library/react'
 
 export const Informations = createContext()
 
-function Card() {
-  console.log('Card is being rendered') // Debugging statement
+function Card({ name, age, gender }) {
+  console.log('Card is being rendered')
   return (
-    <div style={{ border: '2px solid red', padding: '20px', margin: '20px' }}>
+    <div className=" absolute top-[50%] left-[50%] w-[300px] h-[400px] bg-blue-300 translate-x-[-50%] translate-y-[-50%]">
       <h1>this is text of using components inside of context</h1>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Gender: {gender}</p>
     </div>
   )
 }

@@ -1,16 +1,27 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Informations } from '../../App.js'
 
 const Home = () => {
+  const [showCardEl, setShowCardEl] = useState(false)
   const { name, age, gender, Card } = useContext(Informations)
   console.log(name, age, gender, Card)
+
+  const showCard = () => {
+    setShowCardEl(true)
+
+    setTimeout(() => {
+      setShowCardEl(false)
+    }, 1000)
+  }
 
   return (
     <>
       <div className="flex flex-col text-center items-center justify-center h-[100vh] w-[100vw]">
-        Home
+        <h1>home</h1>
+        <button onClick={showCard}>show popUp card</button>
       </div>
-      <Card />
+
+      {showCardEl && <Card />}
     </>
   )
 }
