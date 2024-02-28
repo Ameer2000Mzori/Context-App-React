@@ -1,4 +1,4 @@
-import { createContext } from 'react'
+import { createContext, useContext } from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
@@ -20,6 +20,8 @@ function Card({ place, who, gender }) {
     </div>
   )
 }
+
+export const WeWillUse = () => useContext(Informations)
 
 function App() {
   return (

@@ -1,16 +1,16 @@
-import React, { useContext, useState } from 'react'
-import { Informations } from '../../App.js'
+import React, { useState } from 'react'
+import { WeWillUse } from '../../App.js'
 
 const About = () => {
   const [showCardEl, setShowCardEl] = useState(false)
-  const { name, age, gender, Card } = useContext(Informations)
+  const { name, age, gender, Card } = WeWillUse()
 
   const showCard = () => {
     setShowCardEl(true)
 
     setTimeout(() => {
       setShowCardEl(false)
-    }, 1000)
+    }, 5000)
   }
 
   return (
